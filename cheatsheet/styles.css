@@ -8,10 +8,8 @@ html{
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: radial-gradient(50% 123.47% at 50% 50%, #00FF94 0%, #720059 100%), linear-gradient(121.28deg, #669600 0%, #FF0000 100%), linear-gradient(360deg, #0029FF 0%, #8FFF00 100%), radial-gradient(100% 164.72% at 100% 100%, #6100FF 0%, #00FF57 100%), radial-gradient(100% 148.07% at 0% 0%, #FFF500 0%, #51D500 100%);
+    background: radial-gradient(50% 123.47% at 50% 50%, #ebb507 0%, #4d1941 100%), linear-gradient(121.28deg, #0e294d 0%, #3b0c0c7a 100%), linear-gradient(360deg, #0029FF 0%, #ee6a1ec7 100%), radial-gradient(100% 164.72% at 100% 100%, #001aff 0%, #c78fecd5 100%), radial-gradient(100% 148.07% at 0% 0%, #4458c7ce 0%, #8a82167a 100%);
 background-blend-mode: screen, color-dodge, overlay, difference, normal;
-background-blend-mode: screen, overlay, overlay, difference, difference, normal;
-background-blend-mode: screen, overlay, hard-light, color-burn, color-dodge, normal;
     margin: 0 auto;
 }
 
