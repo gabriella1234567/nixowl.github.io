@@ -3,14 +3,6 @@
 This page contains tables of things (in the realm of HTML, CSS and Javascript) that I find myself forgetting or wishing I had a quick way of accessing.
 ![image](https://github.com/nixowl/nixowl.github.io/assets/80635670/a2261de5-c8c9-49a3-a254-da00115d1c94)
 
-
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Purpose
 
 The purpose if this project was to practive simple HTML/CSS while also giving myself a cheatsheet of things that I personally find useful
