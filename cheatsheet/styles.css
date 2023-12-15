@@ -102,18 +102,11 @@ section {
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 0.7rem;
     margin: 0.8rem auto;
-    scroll-snap-type: y mandatory;
-}
-
-.tableCard > table {
-    scroll-snap-align: center;
 }
 
 table {
-    overflow: wrap;
-    word-wrap:break-word;
-    word-break: break-all;
     margin: 2em;
+    min-width: 96%;
 }
 
 th {
