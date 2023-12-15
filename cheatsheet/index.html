@@ -174,14 +174,13 @@
           </p>
         </div>
         <div class="tableCard">
+          <h3>Box sizing and element position</h3>
           <table>
             <tr>
-              <th>I want to..</th>
-              <th>Tags</th>
+              <th>Tag</th>
               <th>Description</th>
             </tr>
             <tr>
-              <td>Make the browser accurately calculate element sizes</td>
               <td>box-sizing: border-box</td>
               <td>
                 By default, the width and height of an element is calculated
@@ -194,9 +193,6 @@
               </td>
             </tr>
             <tr>
-              <td>
-                Change how elements interact with the flow of the document
-              </td>
               <td>position: static, relative, absolute, fixed</td>
               <td>
                 Static is the default, and it means that the element will be
@@ -208,7 +204,6 @@
               </td>
             </tr>
             <tr>
-              <td>Change how elements align with each other</td>
               <td>display: block, inline-block, inline</td>
               <td>
                 Block elements take up the full width available, and have a line
@@ -219,19 +214,53 @@
                 change the width of block and inline-block elements, but not
                 inline elements.
               </td>
+          </table>
+        </div>
+        <div class="tableCard">
+          <h3>Flexbox</h3>
+          <table>
+            <tr>
+              <th>Tag</th>
+              <th>Description</th>
             </tr>
             <tr>
-              <td>Use flexbox</td>
               <td>display: flex or inline-flex</td>
               <td>
                 Flexbox is a layout mode that arranges elements in a predictable
                 way for different screen sizes and orientations. It's great for
                 responsive design. See full image
-                <a href="Resources\images\css-flexbox-poster.png">here</a>.
+                <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">here</a>.
               </td>
             </tr>
-            <tr></tr>
+            <tr>
+              <td>flex-direction: row, row-reverse, column, column-reverse</td>
+              <td>
+                Row is the default, and it means that the flex items will be
+                placed in a row, left to right. Row-reverse means that the flex
+                items will be placed in a row, right to left. Column means that
+                the flex items will be placed in a column, top to bottom.
+                Column-reverse means that the flex items will be placed in a
+                column, bottom to top.
+              </td>
+            </tr>
+            <tr>
+              <td>flex-wrap: nowrap, wrap, wrap-reverse</td>
+              <td>
+                Nowrap is the default, and it means that the flex items will
+                not wrap. Wrap means that the flex items will wrap if necessary.
+                Wrap-reverse means that the flex items will wrap if necessary,
+                but in reverse order.
+              </td>
+            </tr>
+          <tr>
+            <td>flex-flow: row wrap</td>
+            <td>
+              Shorthand for flex-direction and flex-wrap. The default is row
+              nowrap.
+            </td>
+          </tr>
           </table>
+        </div>
         </div>
       </section>
       <!-- Javascript table -->
@@ -244,52 +273,51 @@
           </p>
         </div>
         <div class="tableCard">
+          <h3>Arrow functions</h3>
+        <table>
+          <tr>
+            <th>Tag</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>const myFunction = arg => dothis;</td>
+            <td>Single line arrow function that takes one argument</td>
+          </tr>
+          <tr> 
+            <td>const myFunction = (arg1, arg2) => dothis;
+            </td>
+            <td>Single line arrow function that takes two arguments</td>
+          </tr>
+          <tr>
+            <td>const myFunction = (arg1, arg2) => {
+              &nbsp;&nbsp;dothis;
+              &nbsp;&nbsp;dothis;
+              &nbsp;&nbsp;return this;
+              }</td>
+            <td>Multi line arrow function that takes two arguments</td>
+        </table>
+        </div>
+        <div class="tableCard">
+          <h3>Event listeners</h3>
           <table>
             <tr>
-              <th>I want to..</th>
-              <th>Tags</th>
+              <th>Tag</th>
               <th>Description</th>
             </tr>
             <tr>
-              <td>Change the content of an HTML element</td>
-              <td>document.getElementById(id).innerHTML = new HTML</td>
+              <td>element.addEventListener("event", function);</td>
               <td>
-                Use the document.getElementById(id) method to find the element
-                you want to change. Then use the innerHTML property to change
-                the content of that element.
+                Adds an event listener to an element. The "event" is the event
+                type, like "click" or "mouseover". The "function" is the code
+                that will run when the event happens.
               </td>
             </tr>
             <tr>
-              <td>Change the style of an HTML element</td>
-              <td>document.getElementById(id).style.property = new style</td>
+              <td>element.removeEventListener("event", function);</td>
               <td>
-                Use the same method as above, but instead of innerHTML, use
-                style.property. For example,
-                document.getElementById("demo").style.fontSize = "35px".
-              </td>
-            </tr>
-            <tr>
-              <td>Change what happens on hover or click</td>
-              <td>
-                document.getElementById(id).onmouseover = function(){myScript};
-              </td>
-              <td>
-                Use the same method as above, but instead of innerHTML, use
-                onmouseover or onclick. For example,
-                document.getElementById("demo").onmouseover =
-                function(){this.innerHTML = "Hello World";};
-              </td>
-            </tr>
-            <tr>
-              <td>Use arrow functions</td>
-              <td>
-                const myFunction = (multiple, arguments) => {do this}<br />
-                const myFunction = arg => {do this}<br />
-                const myFunction = () => do this;
-              </td>
-              <td>
-                Arrow functions are a shorter way to write functions. For
-                example, const myFunction = () => {return "Hello World"};
+                Removes an event listener from an element. The "event" is the
+                event type, like "click" or "mouseover". The "function" is the
+                code that will run when the event happens.
               </td>
             </tr>
           </table>

@@ -25,6 +25,7 @@ The purpose if this project was to practive simple HTML/CSS while also giving my
 * Scroll snapping for each table
 * "Scroll back to top" button that appears after scrolling for some time
 * Possibly another button to scroll up one element, rather than to the top
+* Solve issue with long unbreakable strings making tables overflow without using word-break
 
 ## Contributing
 
