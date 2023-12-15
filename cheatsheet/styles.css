@@ -42,15 +42,15 @@ header ul li {
     margin: 0 1rem;
 }
 
-header ul li a {
-    color: #457697;
+ul li a {
+    color: #574c71;
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: 'Karla', sans-serif;
 }
 
-header ul li a:hover {
-    color: #fff;
+ul li a:hover {
+    color: #e1c160;
 }
 
 main {
