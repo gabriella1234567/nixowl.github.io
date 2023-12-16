@@ -16,46 +16,56 @@ background-blend-mode: screen, color-dodge, overlay, difference, normal;
 header {
     background-color: #fff;
     text-align: center;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.45);
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.75);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    display: block;
-    max-width: 100%;
-    margin: 0 auto;
+    border-radius: 18px;
+    display: flex;
+    max-width: 60%;
+    margin: 18px auto;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
 }
 
 header h1 {
-    font-size: 3.5rem;
-    margin: 1rem;
+    font-size: 1vw;
     font-family: 'Laila', serif;
     letter-spacing: 0.1em;
+    color: #fff;
 }
 
 header ul {
     list-style: none;
     display: flex;
-    justify-content: center;
+    
 }
 
 header ul li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
+    
 }
 
 ul li a {
-    color: #3b8760;
+    color: #fff;
     text-decoration: none;
-    font-size: 1.4rem;
+    font-size: 1vw;
     font-family: 'Karla', sans-serif;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
 }
 
 ul li a:hover {
-    color: #154616;
+    background-color: #3d3d3d;
+    border: 5px solid #3d3d3d;
+    border-radius: 5px;
 }
 
 main {
     padding: 1rem;
-    max-width: 82%;
+    max-width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -66,19 +76,29 @@ main h2 {
     font-family: 'Laila', serif;
     padding-top: 1rem;
     margin:0;
+    color: #fff;
 }
 
 main h3 {
     font-size: 1.5rem;
     margin: 1rem;
     font-family: 'Laila', serif;
+    color: #fff;
 }
 
 main p {
     font-size: 1.2rem;
     line-height: 1.5;
     font-family: 'Karla', sans-serif;
+    color: #fff;
+}
 
+.tableDescription {
+    border-radius: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0 1.5rem;
 }
 
 section {
@@ -87,54 +107,56 @@ section {
     margin: 0 auto;
 }
 
-.tableDescription {
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    padding: 0 0.9rem;
-}
-
 .tableCard {
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 1px 12px rgba(0, 0, 0, 0.25);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(2, 2, 2, 0.3);
     padding: 0.7rem;
     margin: 0.8rem auto;
 }
 
 table {
-    margin: 2em;
-    min-width: 96%;
+    margin: 2em;;
 }
 
 th {
     padding: 0.9rem;
     text-align: center;
-    border: #3a3475 1px solid;
-    border-radius: 3px;
+    border: #363636 1px solid;
+    background-color: rgba(255, 255, 255, 0.7);
     font-size: 1.2rem;
     margin: 1rem;
     font-family: 'Laila', serif;
 }
 
+th:first-of-type {
+    border-radius: 18px 0 0 0;
+}
+
+th:last-of-type {
+    border-radius: 0 18px 0 0;
+}
+
 table td:nth-child(odd) {
-    border: 1px solid rgba(53, 50, 48, 0.5);
-    background-color: rgba(53, 50, 48, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
     font-family: 'Roboto Mono', monospace;
     font-size: 1em;
     font-style: bold;
+    min-width: 15em;
 }
 
 td {
     padding: 0.8rem;
     text-align: center;
-    border: #3a3475 1px solid;
+    border: #363636 1px solid;
+    background-color: rgba(255, 255, 255, 0.6);
     overflow: wrap;
     font-size: 1.2em;
     line-height: 1.5;
     font-family: 'Karla', sans-serif;
+    color: fff;
 }
 
 caption {
