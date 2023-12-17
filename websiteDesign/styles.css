@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #c9c9c9; margin: 1em;
+    color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: end;
+    height: 6vh;
+    width: 95%;
+    margin: 2vh auto;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #0f1a37;
+    border-right: 2px solid #c9c9c9;
+    padding: 1vh;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-top: auto;
+    position: relative;
+}
+
+header li {
+    border-right: 2px solid #c9c9c9;
+    display: flex;
+    padding-bottom: 1vh;
+}
+
+header li:first-of-type {
+    border-left: 2px solid #c9c9c9;
+}
+
+header ul li a{
+    margin: 0 1rem;
+    color: #525252;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header ul li a:hover {
+    color: #000;
+    text-decoration: 3px underline #ffbe54;
+}
+
+main {
+    margin: 2vh auto;
+    width: 95%;
+    display: flex;
+}
+
+.font-pairing {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.palette button {
+    background-color: #fff;
+    border: 2px solid #c9c9c9;
+    position: absolute;
+    top: -1em;
+    left: 70%;
+    transform: translateX(-50%);
+    color: #f6501d;
+    font-size: 1.2rem;
+    padding: 0.7em 2em;
+    margin: 1vh 1vw;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.palette button:hover {
+    background-color: #f6501d;
+    color: #fff;
+}
+
+.palette {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 60vh;
+    border: 2px solid #c9c9c9;
+    padding: 1em;
+}
+
+.colors {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: end;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.colors > div {
+    width: 25%;
+    position: relative;
+}
+
+.color {
+    background: #555;
+    height: 70%;
+    width: 100%;
+}
+
+.hex {
+    text-align: center;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 500px) {
+    header {
+        flex-flow: column nowrap;
+        align-items: center;
+        height: 100%;
+    }
+
+    header h1 {
+        border-right: none;
+         border-bottom: 2px solid #c9c9c9;
+         padding: 1vh;
+    }
+
+    header ul {
+        margin-right: 0;
+    }
+}
