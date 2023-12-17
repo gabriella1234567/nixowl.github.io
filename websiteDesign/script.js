@@ -14,7 +14,7 @@ function generateColors() {
     colors[i].classList.add("fade-in");
     setTimeout(() => {
       colors[i].classList.remove("fade-in");
-    }, 500);
+    }, 200);
     hexes[i].innerHTML = randomColor;
   }
 }
