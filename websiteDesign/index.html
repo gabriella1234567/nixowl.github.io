@@ -1,54 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Website Design</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <h1>Website Design</h1>
-            <nav>
-                <ul>
-                    <li><a href="/cheatsheet/index.html">link</a></li>
-                    <li><a href="/websiteDesign/index.html">link</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="palette">
-                    <button>Generate</button>
-                    <div class="colors">
-                    <div id="color1">
-                    <h3 class="hsl">color1</h3>
-                    <h3 class="hex">color1</h3>
-                </div>
-                    <div id="color2">
-                    <h3 class="hsl">color2</h3>
-                    <h3 class="hex">color2</h3>
-                    </div>
-                    <div id="color3">
-                    <h3 class="hsl">color3</h3>
-                    <h3 class="hex">color3</h3>
-                </div>
-                    <div id="color4">
-                    <h3 class="hsl">color4</h3>
-                    <h3 class="hex">color4</h3>
-                </div>
-                    <div id="color5">
-                    <h3 class="hsl">color5</h3>
-                    <h3 class="hex">color5</h3>
-                </div>
-                </div>
-            </section>
-            <section class="font-pairing">
-                    <p>
-                        <span class="font">Font</span>
-                        <span class="font">Font</span>
-                    </p> 
-            </section>
-        </main>
-        <script src="colorGenerator.js"></script>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Design</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Arvo:wght@700&family=Fjalla+One&family=Lato&family=Merriweather+Sans&family=Montserrat:wght@500;900&family=Nanum+Gothic&family=Raleway&family=Roboto&family=Roboto+Mono:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Website Design</h1>
+      <nav>
+        <ul>
+          <li><a href="/cheatsheet/index.html">Cheatsheet</a></li>
+          <li><a href="../index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <section class="palette">
+            <button>Generate</button>
+          <div class="colors">
+            <div class="card">
+              <div id="color1"></div>
+              <h3 class="hsl">hsl(167, 31%, 46%)</h3>
+            </div>
+            <div class="card">
+              <div id="color2"></div>
+              <h3 class="hsl">hsl(167, 31%, 46%)</h3>
+            </div>
+            <div class="card">
+              <div id="color3"></div>
+              <h3 class="hsl">hsl(167, 31%, 46%)</h3>
+            </div>
+            <div class="card">
+              <div id="color4"></div>
+              <h3 class="hsl">hsl(167, 31%, 46%)</h3>
+            </div>
+            <div class="card">
+              <div id="color5"></div>
+              <h3 class="hsl">hsl(167, 31%, 46%)</h3>
+            </div>
+          </div>
+        </section>
+        <section class="font-pairing">
+            <div class="font-content">
+            <h4 class="heading">Monseratt Black</h4>
+            <h6 class="subheading">Monseratt Medium</h6>
+          <p class="paragraph">Raleway</p>
+        </div>
+        </section>
+      <section class="website-preview">
+        <div id="preview-container">
+        <div id="website-header" class="first-color">
+          <h4 id="headerText">Header</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div id="website-main">
+            <h5 id="website-heading" class="color-2">Heading</h5>
+            <p class="preview-paragraph">Vestibulum vel varius nisl. Maecenas tincidunt urna id ultrices ultricies. Nulla quis sodales dui. Praesent accumsan molestie lorem, eu condimentum felis vehicula a. Morbi mollis, orci ac ultricies faucibus, augue sapien maximus ligula, id sagittis felis lorem sit amet est. Proin id ex a felis convallis eleifend sed vel turpis. Quisque nisl elit, pharetra non quam in, sollicitudin cursus est. In sollicitudin dignissim enim, eu finibus lacus vulputate non.</p>
+            <h6 id="articleSubheading">Subheading</h6>
+            <p class="preview-paragraph">Nulla id dolor sed metus bibendum vehicula. Aenean eu egestas sapien, id tempor leo. Maecenas sagittis ipsum ac turpis tincidunt, quis posuere ligula malesuada. Proin porta est ut ipsum malesuada, id pretium nisi condimentum. Nulla facilisi. Pellentesque at libero nulla. Praesent a auctor ipsum, at scelerisque enim. Nullam aliquet vitae turpis nec tempus. Nullam a auctor arcu. Quisque suscipit vehicula ipsum, sit amet sagittis odio. Quisque lectus arcu, euismod a dignissim in, fermentum at mi.
+                Suspendisse rutrum tortor sit amet nulla semper, in sagittis enim eleifend. Phasellus id blandit arcu. Donec nisl sapien, sollicitudin ut lectus eget, fermentum interdum ante. Quisque luctus metus eget dapibus efficitur. Maecenas id libero in nisl euismod cursus eu a lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam aliquam orci eget massa pharetra rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+        </div>
+        <div id="website-sidebar" class="first-color">
+            <h6 id="sidebarHeading">Hello!</h6>
+            <p>Sed molestie ex ante, non convallis mauris vehicula ut. Mauris vehicula nunc id lorem blandit, eu condimentum diam porta. Sed nec ante lacus. Maecenas hendrerit, mauris eget mattis facilisis, risus metus aliquet libero, et euismod odio magna non massa.
+            </p>
+        </div>
+        <div id="website-footer" class="color-2"><ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help</a></li>
+        </ul></div></div>
+      </section>
+    </main>
+    <script src="colorGenerator.js"></script>
+  </body>
 </html>
