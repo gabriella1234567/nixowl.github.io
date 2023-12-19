@@ -27,7 +27,7 @@ const darkMutedColor = () => {
 const lightGrey = () => {
   let hue = (baseHue + Math.floor(Math.random() * 50) - 25 + 360) % 360;
   let saturation = Math.floor(Math.random() * 7);
-  let lightness = Math.floor(Math.random() * 10) + 85;
+  let lightness = Math.floor(Math.random() * 8) + 88;
   return generateColor(hue, saturation, lightness);
 };
 
@@ -40,28 +40,44 @@ const darkGrey = () => {
 };
 // Generate accent color on the opposite side of the color wheel from lightHue by returning the absolute value of lightHue - 180
 const accentColor = () => {
-  let hue = Math.abs(baseHue - 180);
+  let hue;
+  if (baseHue < 180) {
+    hue = Math.abs(baseHue + 180);
+  } else {
+   hue = Math.abs(baseHue - 180);
+  } 
   let saturation = Math.floor(Math.random() * 70) + 30;
-  let lightness = Math.floor(Math.random() * 60) + 20;
+  let lightness = Math.floor(Math.random() * 30) + 20;
   return generateColor(hue, saturation, lightness);
 };
 
 // Function to apply colors to the page
 const applyColors = () => {
   baseHue = Math.floor(Math.random() * 360);
-  document.getElementById("color1").style.backgroundColor = lightMutedColor();
-  hsls[0].innerHTML = lightMutedColor();
-  document.getElementById("color2").style.backgroundColor = darkMutedColor();
-  hsls[1].innerHTML = darkMutedColor();
-  document.getElementById("color3").style.backgroundColor = lightGrey();
-  hsls[2].innerHTML = lightGrey();
-  document.getElementById("color4").style.backgroundColor = darkGrey();
-  hsls[3].innerHTML = darkGrey();
-  document.getElementById("color5").style.backgroundColor = accentColor();
-  hsls[4].innerHTML = accentColor();
+  let lightMuted = lightMutedColor();
+  let darkMuted = darkMutedColor();
+  let lightGray = lightGrey();
+  let darkGray = darkGrey();
+  let accent = accentColor();
+  document.getElementById("color1").style.backgroundColor = lightMuted;
+  document.getElementById("website-footer").style.backgroundColor = lightMuted;
+  document.getElementById("website-sidebar").style.backgroundColor = lightMuted;
+  hsls[0].innerHTML = lightMuted;
+  document.getElementById("color2").style.backgroundColor = darkMuted;
+  document.getElementById("header-text").style.color = darkMuted;
+  document.getElementById("sidebar-heading").style.color = darkMuted;
+  hsls[1].innerHTML = darkMuted;
+  document.getElementById("color3").style.backgroundColor = lightGray;
+  document.getElementById("website-main").style.backgroundColor = lightGray;
+  document.getElementById("website-header").style.backgroundColor = lightGray;
+  hsls[2].innerHTML = lightGray;
+  document.getElementById("color4").style.backgroundColor = darkGray;
+  document.getElementById("website-heading").style.color = darkGray;
+  document.getElementById("website-subheading").style.color = darkGray;
+  hsls[3].innerHTML = darkGray;
+  document.getElementById("color5").style.backgroundColor = accent;
+  hsls[4].innerHTML = accent;
 };
-
-
 
 // Add event listener to button
 btn.addEventListener("click", applyColors);

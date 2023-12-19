@@ -165,10 +165,10 @@ main {
 #preview-container {
     padding: 10px 30px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: 30px;
-    grid-row-gap: 10px;
+    grid-row-gap: 20px;
     grid-template-areas: 
     "header header"
     "main sidebar"
@@ -202,7 +202,8 @@ main {
     align-items: center;
 }
 
-#website-header a {
+#website-header a,
+#website-footer a {
     margin: 1.4vh 1.2vh 0 1.2vh;
     color: hsl(0, 0%, 24%);
     text-decoration: none;
@@ -223,10 +224,12 @@ main {
     grid-area: main;
     background-color:hsl(253, 7%, 92%);
     padding: 2em;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
 }
 
-h5 {
-    font-size: 3.5rem;
+#website-main h5 {
+    font-size: 3rem;
     color: hsl(268, 40%, 60%)    ;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
@@ -234,20 +237,30 @@ h5 {
 
 }
 
-h6 {
+#website-subheading {
     font-size: 2rem;
     color:  hsl(88, 50%, 46%);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-transform: uppercase;
-    line-height: 1.5;
 }
 
-p {
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.9;
-    color: hsl(289, 7%, 8%);
+#website-sidebar h6 {
+    font-size: 1.5rem;
+    color: hsl(268, 40%, 60%);
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 1.5;
+
 }
+
+#website-sidebar p {
+    line-height: 1.2;
+    color: hsl(289, 7%, 8%);
+    font-family: 'Raleway', sans-serif;
+}
+
+
 
 #website-sidebar {
     grid-area: sidebar;
